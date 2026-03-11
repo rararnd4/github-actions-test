@@ -1,0 +1,14 @@
+name: First Workflow
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 코드 가져오기
+        uses: actions/checkout@v4
+
+      - name: 테스트 메시지
+        run: echo "Hello GitHub Actions"
